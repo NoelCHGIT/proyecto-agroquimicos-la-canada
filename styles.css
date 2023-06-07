@@ -1,4 +1,4 @@
-/* Estilos para la página principal*/
+/* ------------------ Estilos para la página principal ---------------------------- */
 
 
 /* Estilos para la franja de encabezado */
@@ -9,8 +9,9 @@
     justify-content: space-between;
     padding: 10px 20px;
     color: #fff;
-}
-
+    position: relative;
+    z-index: 2; /* Ajusta el z-index para que el encabezado esté por encima de la portada */
+  }
 
 /* Estilos para el logotipo */
 .logo img {
@@ -115,6 +116,7 @@ nav {
     color: #009959; /* Cambiamos el color al pasar el cursor */
 }
 
+
 /* Estilos para el menú desplegable */
 .submenu {
     display: none;
@@ -126,6 +128,7 @@ nav {
     padding: 10px; /* Añadimos padding para separación interna */
     margin: 0;
     width: 200px; /* Aumentamos el ancho del submenú */
+    z-index: 2; /* Asegura que la portada esté detrás del menú */
 }
 
 .submenu li {
@@ -153,7 +156,67 @@ nav {
 }
 
 
-/* Estilos para la página conocenos */
+/* Estilos para las portadas deslizantes */
+#slider {
+    position: relative;
+    width: 100%;
+    height: 50%; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    z-index: 1; /* Asegura que la portada esté detrás del menú */
+  }
+  
+  .slider-container {
+    display: flex;
+    width: 100%; /* Ajusta el ancho según la cantidad de imágenes */
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slide {
+    flex: 1 0 99%;
+    height: 100%;
+    z-index: 1; /* Asegura que la portada esté detrás del menú */
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 5px; /* Agrega bordes redondeados según tus preferencias */
+    z-index: 1; /* Asegura que la portada esté detrás del menú */
+  }
+  
+  .arrow-container {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    z-index: 1; /* Asegura que la portada esté detrás del menú */
+  }
+  
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #009959; /* Ajusta el color de fondo de las flechas */
+    color: #fff; /* Ajusta el color del texto de las flechas */
+    font-size: 24px; /* Ajusta el tamaño de la fuente de las flechas */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .arrow:hover {
+    background-color: #00663b; /* Ajusta el color de fondo al pasar el cursor */
+  }
+  
+
+/* --------------------Estilos para la página conocenos ---------------------------------*/
 
 /* Estilos generales */
 body {
@@ -175,7 +238,7 @@ body {
 /* Estilos para la imagen de portada */
 .about-section img {
     width: 100%;
-    height: 45%;
+    height: 50%;
     border-radius: 10px; /* Agregamos bordes redondos */
 }
 

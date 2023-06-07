@@ -1,0 +1,353 @@
+/* Estilos para la página principal*/
+
+
+/* Estilos para la franja de encabezado */
+.header-bar {
+    background-color: #009959;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+
+/* Estilos para el logotipo */
+.logo img {
+    width: 300px; /* Ajusta el tamaño del logotipo según tus necesidades */
+    border-radius: 5px; /* Agregamos bordes redondos */
+}
+
+
+/* Estilos para el campo de búsqueda */
+.search-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centramos horizontalmente */
+}
+
+.search-box input[type="text"] {
+    width: 700px; /* Ajusta el ancho de la barra de búsqueda según tus necesidades */
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-right: 10px; /* Agregamos margen derecho */
+}
+
+
+/* Estilos para el botón "Contáctanos" */
+.contact-button a {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-button a:hover {
+    background-color: #9e9b9b;
+}
+
+
+/* Estilos personalizados para el botón de búsqueda */
+.search-button {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #9e9b9b;
+}
+
+
+/* Estilos para la navegación */
+nav {
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    background-color: #FCC000;
+    color: #fff;
+    border-radius: 0px;
+    padding: 15px 0; /* Añadimos padding para separación vertical */
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 80px; /* Aumentamos el margen entre elementos */
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px; /* Aumentamos el tamaño del texto */
+    transition: color 0.3s ease; /* Agregamos transición para el color */
+}
+
+.menu a:hover {
+    color: #009959; /* Cambiamos el color al pasar el cursor */
+}
+
+/* Estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FCC000;
+    list-style: none;
+    padding: 10px; /* Añadimos padding para separación interna */
+    margin: 0;
+    width: 200px; /* Aumentamos el ancho del submenú */
+}
+
+.submenu li {
+    margin: 20px 0; /* Aumentamos el margen vertical entre elementos */
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px; /* Ajustamos el tamaño del texto */
+    transition: background-color 0.3s ease; /* Agregamos transición */
+}
+
+
+/* Estilos para mostrar el submenú al pasar el cursor sobre el elemento padre */
+.menu li:hover > .submenu {
+    display: block;
+}
+
+/* Estilos para mostrar el submenú al pasar el cursor sobre el subtema */
+.submenu li:hover > .submenu {
+    display: block;
+}
+
+
+/* Estilos para la página conocenos */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el título "Conócenos" */
+.green-title {
+    color: #009959;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+/* Estilos para la imagen de portada */
+.about-section img {
+    width: 100%;
+    height: 45%;
+    border-radius: 10px; /* Agregamos bordes redondos */
+}
+
+/* Estilos para el contenido adicional de la página */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos para el texto de abajo de la imagen de portada */
+.text-container {
+    margin: 10px auto;
+    max-width: 1400px;
+    padding: 0 10px;
+}
+
+.text-container p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.text-container .highlight {
+    color: #009959; /* Resaltar en verde una frase en específico */
+    font-weight: bold;
+    
+}
+
+/* Estilos para las cajas de valores */
+.value-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.value-box {
+    flex: 0 0 calc(45% - 190px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Añadir espacio interno */
+}
+
+.value-box img {
+    width: 140px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+.value-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.text-container-v p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Estilos para las cajas de misión y visión */
+.yellow-title-m {
+    color: #FCC000;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.green-title-v{
+    color: #009959;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+/* Estilos para las cajas de misión y visión */
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.mission-box,
+.vision-box {
+    flex: 0 0 calc(45% - 20px);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.mission-box {
+    background-color: rgba(0, 153, 89, 0.8); /* Color de fondo con transparencia */
+}
+
+.vision-box {
+    background-color: rgba(252, 192, 0, 0.8); /* Color de fondo con transparencia */
+}
+
+.image-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mission-box h3,
+.vision-box h3 {
+    margin-top: 0;
+}
+
+.mission-box p,
+.vision-box p {
+    margin-bottom: 0;
+}
+
+.text-container-myv p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #000000;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #009959;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Estilos para la franja del footer */
+  .footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilos para el logo en el footer */
+  .logo img {
+    width: 200px; /* Ajusta el tamaño del logo según tus necesidades */
+  }
+  
+  /* Estilos para el texto en el footer */
+  .footer-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footer-text p {
+    font-size: 14px;
+  }
+  

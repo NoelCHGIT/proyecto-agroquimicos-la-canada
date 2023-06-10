@@ -414,3 +414,119 @@ footer {
     font-size: 14px;
   }
   
+
+  /* --------------------Estilos para la página catalogo ---------------------------------*/
+
+  /* Estilos del índice alfabético */
+/* Estilos del índice por marca */
+.index-container {
+    margin-bottom: 10px;
+}
+
+.index-container h2 {
+    font-size: 30px; /* Tamaño de fuente del título */
+    font-weight: bold; /* Peso de fuente en negrita */
+    margin-bottom: 10px; /* Margen inferior */
+    text-align: center;
+}
+
+.index-list {
+    list-style-type: none; /* Eliminar los estilos de viñeta */
+    padding: 0; /* Eliminar el padding */
+    margin: 0; /* Eliminar el margen */
+}
+
+.index-list li {
+    display: inline-block; /* Mostrar elementos de lista en línea */
+    margin-right: 20px; /* Margen derecho entre elementos de lista */
+    font-size: 20px;
+}
+
+.index-list a {
+    display: inline-block; /* Mostrar enlaces en línea */
+    text-decoration-line: none; /* Eliminar la decoración de texto */
+    padding: 10px 16px; /* Espacio de relleno interno */
+    border-radius: 4px; /* Borde redondeado */
+    color: #333; /* Color del texto */
+    font-size: 19px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave al hacer hover */
+}
+
+
+.index-list a:hover {
+    background-color: #f5f5f5; /* Color de fondo al hacer hover */
+    color: #000; /* Color del texto al hacer hover */
+    transform: scale(1.1); /* Escalar la imagen al hacer hover */
+
+}
+
+.index-list a.index-button {
+    padding: 6px 10px; /* Ajustar el espacio de relleno para letras más pequeñas */
+    font-size: 18px; /* Tamaño de fuente para letras más pequeñas */
+    font-weight: bold;
+}
+
+.index-list img {
+    width: 60px; /* Ancho de la imagen del logo */
+    height: 60px; /* Alto de la imagen del logo */
+    border-radius: 50%; /* Borde redondeado */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.index-list img:hover {
+    transform: scale(1.1); /* Escalar la imagen al hacer hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave al hacer hover */
+}
+
+
+
+
+
+/* Estilos del índice por marca */
+.brand-container {
+    margin-bottom: 20px;
+}
+
+.brand-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brand-list li {
+    margin: 5px;
+}
+
+.brand-list a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Estilos de los logos de marca */
+.brand-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.brand-list img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos de los productos */
+.product {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

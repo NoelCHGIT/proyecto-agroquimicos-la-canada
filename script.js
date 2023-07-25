@@ -120,3 +120,52 @@ brandLogos.forEach(logo => {
   });
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Obtener todas las secciones de productos por letra
+  const sectionsByLetter = document.querySelectorAll('section[id^="letter-"]');
+
+  // Obtener todos los botones del índice alfabético
+  const indexButtons = document.querySelectorAll('.index-button');
+
+  // Función para ocultar todas las secciones de productos
+  function hideAllSections() {
+      sectionsByLetter.forEach((section) => {
+          section.style.display = "none";
+      });
+  }
+
+  // Mostrar todos los productos al cargar la página
+  hideAllSections();
+  document.getElementById('all-products').style.display = 'block';
+
+  // Agregar el evento de clic a cada botón del índice alfabético
+  indexButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+          event.preventDefault();
+
+          // Ocultar todas las secciones de productos
+          hideAllSections();
+
+          // Obtener el ID de la sección correspondiente al botón clickeado
+          const sectionId = button.getAttribute('href');
+
+          // Mostrar la sección correspondiente al botón clickeado
+          document.querySelector(sectionId).style.display = 'block';
+      });
+  });
+});
+
+
+
+
+// JavaScript para abrir la imagen grande al hacer clic en el enlace
+document.addEventListener("DOMContentLoaded", function() {
+  const productImage = document.getElementById("productImage");
+  const productImageSection = document.querySelector(".product-image-section");
+
+  productImageSection.addEventListener("click", function() {
+    productImageSection.classList.toggle("open");
+  });
+});

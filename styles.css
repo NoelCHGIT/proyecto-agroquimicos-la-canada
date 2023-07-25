@@ -481,9 +481,6 @@ footer {
 }
 
 
-
-
-
 /* Estilos del índice por marca */
 .brand-container {
     margin-bottom: 20px;
@@ -521,6 +518,20 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos para el título h2 en la sección "letter-a" */
+
+#letter-a {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-a h2 {
+    font-size: 45px;
+}
 
 /* Estilos de los productos */
 .product {
@@ -530,3 +541,76 @@ footer {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+  
+
+  /* Estilos para los enlaces de productos */
+.main-links a {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 22px; /* Aumentamos el tamaño de las letras */
+    text-decoration: none;
+    color: #009959 ;
+  }
+  
+  .main-links a:hover {
+    text-decoration: underline;
+  }
+
+
+.brand-logo {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+  }
+  
+  /* Estilos para los enlaces y el contenedor */
+  .link-item {
+    display: flex; /* Aplica flexbox para alinear elementos en línea */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    margin-bottom: 20px; /* Espacio entre cada enlace y la imagen */
+  }
+  
+  .link-item a {
+    margin-right:auto; /* Espacio entre los enlaces y la imagen */
+  }
+  
+
+  /* ------------------ Estilos para la página abrazaderas ---------------------------- */
+
+/* Estilos para la imagen de la sección */
+.product-image-section {
+    text-align:center;
+    padding: 20px;
+  }
+  
+  .product-image-section img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto de agrandamiento al pasar el cursor sobre la imagen */
+  .product-image-section img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Estilos para el enlace de la imagen */
+  .product-image-section a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estilos para la imagen grande cuando se le da clic */
+.product-image-section.open img {
+    max-width: 70%;
+    max-height: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: zoom-out;
+  }
+  

@@ -548,6 +548,7 @@ footer {
     font-size: 45px;
 }
 
+
 /* Estilos para el título h2 en la sección "letter-c" */
 #letter-c {
 
@@ -561,6 +562,359 @@ footer {
 #letter-c h2 {
     font-size: 45px;
 }
+
+/* Estilos para el título h2 en la sección "letter-d" */
+#letter-d {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-d h2 {
+    font-size: 45px;
+}
+
+/* Estilos para el título h2 en la sección "letter-e" */
+#letter-e {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-e h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-f" */
+#letter-f {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-f h2 {
+    font-size: 45px;
+}
+
+
+
+/* Estilos para el título h2 en la sección "letter-g" */
+#letter-g {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-g h2 {
+    font-size: 45px;
+}
+
+
+
+/* Estilos para el título h2 en la sección "letter-h" */
+#letter-h {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-h h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-i" */
+#letter-i {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-i h2 {
+    font-size: 45px;
+}
+
+
+
+/* Estilos para el título h2 en la sección "letter-j" */
+#letter-j {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-j h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-k" */
+#letter-k {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-k h2 {
+    font-size: 45px;
+}
+
+
+
+/* Estilos para el título h2 en la sección "letter-l" */
+#letter-l {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-l h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-m" */
+#letter-m {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-m h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-n" */
+#letter-n {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-n h2 {
+    font-size: 45px;
+}
+
+
+
+/* Estilos para el título h2 en la sección "letter-o" */
+#letter-o {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-o h2 {
+    font-size: 45px;
+}
+
+
+
+/* Estilos para el título h2 en la sección "letter-p" */
+#letter-p {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-p h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-q" */
+#letter-q {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-q h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-r" */
+#letter-r {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-r h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-s" */
+#letter-s {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-s h2 {
+    font-size: 45px;
+}
+
+
+
+/* Estilos para el título h2 en la sección "letter-t" */
+#letter-t {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-t h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-u" */
+#letter-u {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-u h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-v" */
+#letter-v {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-v h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-w" */
+#letter-w {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-w h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-x" */
+#letter-x {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-x h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-y" */
+#letter-y {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-y h2 {
+    font-size: 45px;
+}
+
+
+/* Estilos para el título h2 en la sección "letter-z" */
+#letter-z {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-z h2 {
+    font-size: 45px;
+}
+
+
+
 
 
 

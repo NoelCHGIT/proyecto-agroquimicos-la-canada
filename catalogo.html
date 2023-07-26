@@ -1,47 +1,12 @@
-<!DOCTYPE html>
 <html>
-
 <head>
     <title>Catalogo</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-bar">
-            <div class="logo">
-                <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
-            </div>
+    <div id="header-container"></div> <!-- Contenedor para el header -->
 
-
-
-            <div class="search-box">
-                <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
-                <datalist id="suggestions">
-                    <option value="Abrazaderas para Mangueras de Jardín">
-                    <option value="Accesorios para neumático">
-                    <option value="Accesorios para aerógrafos">
-                    <option value="Accesorios para auto">
-                    <option value="Accesorios para cascos">
-                    <option value="Accesorios para compresor">
-                    <option value="Accesorios para herramienta neumática">
-
-                    <!-- Agrega más opciones de búsqueda sugeridas -->
-                </datalist>
-                <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
-            </div>
-
-
-
-
-            <div class="contact-button">
-                <a href="#">Contáctanos</a>
-            </div>
-        </div>
-    </header>
-    
-
-    
     <nav>
         <div class="index-container">
             <h2>Índice alfabético</h2>
@@ -132,7 +97,7 @@
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="accersorios_para_máquinas_portátiles_inalámbricas.html">Accesorios para máquinas portátiles
+                <a href="accesorios_para_máquinas_portátiles_inalámbricas.html">Accesorios para máquinas portátiles
                     inalámbricas</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
@@ -198,15 +163,15 @@
         <!-- Aquí va el contenido de los productos que comienzan con la letra C -->
         <div class="main-links">
             <div class="link-item">
-                <a href="balones_de_fútbol_soccer.html">Balones de fútbol soccer</a>
+                <a href="cabezales_para_dados_de_tarja.html">Cabezales para dados de tarja</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="banco_metálico.html">Banco metálico</a>
+                <a href="cabezas_infladoras_accesorios_neumáticos.html">Cabezas infladoras accesorios neumáticos</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="bandas_de_lija.html">Bandas de lija</a>
+                <a href="cables_de_posicionamiento.html">Cables de posicionamiento</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
@@ -256,17 +221,30 @@
     <!-- Agrega más secciones para cada marca según sea necesario -->
     </main>
 
-    <footer>
-        <div class="footer-bar">
-            <div class="logo">
-                <img src="imagenes/LOGO.jpg" alt="Logo de la empresa">
-            </div>
-        </div>
-        <div class="footer-text">
-            <p>&copy; 2023 Agroquímicos La Cañada S.A. de C.V. Todos los derechos reservados.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        // Carga del header desde header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headerContainer = document.getElementById('header-container');
+                headerContainer.innerHTML = data;
+            })
+            .catch(error => console.error(error));
+
+             // Carga del footer desde footer.html
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                const footerContainer = document.createElement('footer');
+                footerContainer.innerHTML = data;
+                document.body.appendChild(footerContainer);
+            })
+            .catch(error => console.error(error));
+    </script>
+    
+   
 </body>
 </html>

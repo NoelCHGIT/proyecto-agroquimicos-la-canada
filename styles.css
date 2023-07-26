@@ -615,7 +615,7 @@ footer {
   
   .product-image-section img {
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
     height: auto;
     border: 2px solid #ccc;
     cursor: pointer;
@@ -624,7 +624,7 @@ footer {
   
   /* Efecto de agrandamiento al pasar el cursor sobre la imagen */
   .product-image-section img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
   
   /* Estilos para el enlace de la imagen */
@@ -635,7 +635,7 @@ footer {
     color: #333;
   }
   
-  /* Estilos para la imagen grande cuando se le da clic */
+  /* Estilos para la imagen grande cuando se le da clic 
 .product-image-section.open img {
     max-width: 70%;
     max-height: none;
@@ -643,7 +643,7 @@ footer {
     border-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: zoom-out;
-  }
+  }*/
   
 
 

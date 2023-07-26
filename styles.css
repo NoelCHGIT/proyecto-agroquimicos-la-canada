@@ -141,7 +141,7 @@ nav {
     color: #000000;
     text-decoration: none;
     font-size: 20px; /* Ajustamos el tamaño del texto */
-    transition: background-color 0.3s ease; /* Agregamos transición */
+    transition: background-color 0.9s ease; /* Agregamos transición */
 }
 
 
@@ -167,14 +167,14 @@ nav {
   
   .slider-container {
     display: flex;
-    width: 100%; /* Ajusta el ancho según la cantidad de imágenes */
+    width: 101%; /* Ajusta el ancho según la cantidad de imágenes */
     transition: transform 0.5s ease;
     position: relative;
     z-index: 1;
   }
   
   .slide {
-    flex: 1 0 99%;
+    flex: 1 0 100%;
     height: 100%;
     z-index: 1; /* Asegura que la portada esté detrás del menú */
   }
@@ -547,6 +547,21 @@ footer {
 #letter-b h2 {
     font-size: 45px;
 }
+
+/* Estilos para el título h2 en la sección "letter-c" */
+#letter-c {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-c h2 {
+    font-size: 45px;
+}
+
 
 
 /* Estilos de los productos */

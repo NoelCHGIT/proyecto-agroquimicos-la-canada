@@ -10,10 +10,20 @@
             <div class="logo">
                <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
             </div>
+           
             <div class="search-box">
-                <input type="text" placeholder="Buscar productos..."><!-- Campo de búsqueda -->
-                <button type="submit" class="search-button">Buscar</button><!-- Botón de búsqueda -->
+                <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
+                <datalist id="suggestions">
+                    <option value="Abrazaderas">
+                    <option value="Abrazaderas para Mangueras de Jardín">
+                    <option value="Accesorios para Auto">
+                    <option value="Accesorios para Neumático">
+                    <!-- Agrega más opciones de búsqueda sugeridas -->
+                </datalist>
+                <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
             </div>
+
+
             <div class="contact-button">
                 <a href="#">Contáctanos</a>
             </div>

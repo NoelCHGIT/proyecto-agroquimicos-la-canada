@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Accesorios para Pistolaes de Aire para Pintar</title>
+        <title>Accesorios para Máquinas Portátiles Inalámbricas</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -10,10 +10,19 @@
                 <div class="logo">
                    <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
                 </div>
+                
                 <div class="search-box">
-                    <input type="text" placeholder="Buscar productos..."><!-- Campo de búsqueda -->
-                    <button type="submit" class="search-button">Buscar</button><!-- Botón de búsqueda -->
+                    <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
+                    <datalist id="suggestions">
+                        <option value="Abrazaderas">
+                        <option value="Abrazaderas para Mangueras de Jardín">
+                        <option value="Accesorios para Auto">
+                        <option value="Accesorios para Neumático">
+                        <!-- Agrega más opciones de búsqueda sugeridas -->
+                    </datalist>
+                    <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
                 </div>
+    
                 <div class="contact-button">
                     <a href="#">Contáctanos</a>
                 </div>
@@ -52,13 +61,13 @@
     
 <body>
     <main>
-        <h1>Accesorios para pistolas de aire para pintar</h1>
+        <h1>Accesorios para máquinas portátiles inalámbricas</h1>
         <!-- Contenido específico de la página -->
         <section class="product-image-section">
-            <img src="https://www.truper.com/CatVigente/img/modulos/84381-15027-RE-PIPI-200-294.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/84383-12064-RE-PIPI-340X-294.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/84388-12065-RE-PIPI-440X-294.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/84397-13057-RE-PIPI-410-294.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/81398-17033-DESI-36-481.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/90410-102202-COMBO-20A-481.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/81402-15041-BAT-20N-481.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/81413-15043-CAR-20N-481.jpg" alt="Imagen de productos" id="productImage">
         </section>
     </main>
 

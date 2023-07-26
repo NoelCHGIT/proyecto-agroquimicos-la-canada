@@ -533,6 +533,22 @@ footer {
     font-size: 45px;
 }
 
+
+/* Estilos para el título h2 en la sección "letter-b" */
+#letter-b {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    align-items: center;
+    text-align: center;
+  }
+
+#letter-b h2 {
+    font-size: 45px;
+}
+
+
 /* Estilos de los productos */
 .product {
     background-color: #f2f2f2;
@@ -614,3 +630,17 @@ footer {
     cursor: zoom-out;
   }
   
+
+
+
+
+
+/* Estilo para las sugerencias de búsqueda */
+.search-suggestion {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-suggestion:hover {
+    background-color: #f1f1f1;
+}

@@ -169,3 +169,51 @@ document.addEventListener("DOMContentLoaded", function() {
     productImageSection.classList.toggle("open");
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+function buscarProducto() {
+  const input = document.getElementById('search-input').value.toLowerCase();
+  if (input.trim() !== '') {
+      const productURL = input.replace(/\s/g, '_').toLowerCase() + '.html';
+      verificarExistencia(productURL);
+  }
+}
+
+function verificarExistencia(productURL) {
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+              window.location.href = productURL;
+          } else {
+              alert(`El producto no se encuentra en el catálogo.`);
+          }
+      }
+  };
+  xhr.open('GET', productURL, true);
+  xhr.send();
+}
+
+const suggestions = document.getElementById('suggestions').options;
+const searchInput = document.getElementById('search-input');
+
+searchInput.addEventListener('input', function() {
+  const searchValue = this.value.toLowerCase();
+  const filteredSuggestions = Array.from(suggestions).filter(option =>
+      option.value.toLowerCase().startsWith(searchValue)
+  );
+  const datalist = document.createElement('datalist');
+  datalist.id = 'filtered-suggestions';
+  filteredSuggestions.forEach(option => datalist.appendChild(option.cloneNode(true)));
+  suggestions.parentNode.replaceChild(datalist, suggestions);
+  datalist.id = 'suggestions'; // Restaurar el ID original para que el formulario siga funcionando
+});

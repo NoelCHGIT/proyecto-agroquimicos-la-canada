@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Catalogo</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="header-bar">
             <div class="logo">
-               <a href="index.html"><img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a> 
+                <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
             </div>
+
+
+
             <div class="search-box">
-                <input type="text" placeholder="Buscar productos..."><!-- Campo de búsqueda -->
-                <button type="submit" class="search-button">Buscar</button><!-- Botón de búsqueda -->
+                <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
+                <datalist id="suggestions">
+                    <option value="Abrazaderas para Mangueras de Jardín">
+                    <option value="Accesorios para neumático">
+                    <option value="Accesorios para aerógrafos">
+                    <option value="Accesorios para auto">
+                    <option value="Accesorios para cascos">
+                    <option value="Accesorios para compresor">
+                    <option value="Accesorios para herramienta neumática">
+
+                    <!-- Agrega más opciones de búsqueda sugeridas -->
+                </datalist>
+                <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
             </div>
+
+
+
+
             <div class="contact-button">
                 <a href="#">Contáctanos</a>
             </div>
         </div>
     </header>
+    
 
+    
     <nav>
         <div class="index-container">
             <h2>Índice alfabético</h2>
@@ -55,17 +77,18 @@
             </ul>
         </div>
     </nav>
-    
+
     <nav>
-    <div class="index-container">
-        <h2>Índice por marca</h2>
-        <ul class="index-list">
-            <li><a href="#all-brands">Todas las marcas</a></li>
-            <li><a href="#brand-a"><img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo Marca A"></a></li>
-            <!-- Agrega más marcas según sea necesario -->
-        </ul>
-    </div>
-      
+        <div class="index-container">
+            <h2>Índice por marca</h2>
+            <ul class="index-list">
+                <li><a href="#all-brands">Todas las marcas</a></li>
+                <li><a href="#brand-a"><img src="https://www.truper.com/CatVigente/img/TRUPER.svg"
+                            alt="Logo Marca A"></a></li>
+                <!-- Agrega más marcas según sea necesario -->
+            </ul>
+        </div>
+
     </nav>
 
     <section id="letter-a">
@@ -74,73 +97,122 @@
         <!-- Aquí va el contenido de los productos que comienzan con la letra A -->
         <div class="main-links">
             <div class="link-item">
-                <a href="abrazaderas_mangueras_jardin.html">Abrazaderas para Mangueras de Jardín</a>
+                <a href="abrazaderas_para_mangueras_de_jardín.html">Abrazaderas para mangueras de jardín</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="accesorios_neumatico.html">Accesorios para Neumático</a>
+                <a href="accesorios_para_neumático.html">Accesorios para neumático</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="accesorios_aerografos.html">Accesorios para Aerógrafos</a>
+                <a href="accesorios_para_aerógrafos.html">Accesorios para aerógrafos</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="accesorios_auto.html">Accesorios para Auto</a>
+                <a href="accesorios_para_auto.html">Accesorios para auto</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="accesorios_cascos.html">Accesorios para cascos</a>
+                <a href="accesorios_para_cascos.html">Accesorios para cascos</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
         </div>
 
         <div class="main-links">
             <div class="link-item">
-                <a href="accesorios_compresor.html">Accesorios para Compresor</a>
+                <a href="accesorios_para_compresor.html">Accesorios para compresor</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="accesorios_herramienta_neumatica.html">Accesorios para Herramienta Neumática</a>
+                <a href="accesorios_para_herramienta_neumática.html">Accesorios para herramienta neumática</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
             <div class="link-item">
-                <a href="accesorios_para_inversoras_plasma.html">Accesorios para Inversoras de Plasma</a>
+                <a href="accesorios_para_inversoras_de_corte_de_plasma.html">Accesorios para inversoras de corde de plasma</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
-            </div> 
+            </div>
             <div class="link-item">
-                <a href="accersorios_para_maquinas_portatile_inalambricas.html">Accesorios para Máquinas Portátiles Inalámbricas</a>
+                <a href="accersorios_para_máquinas_portátiles_inalámbricas.html">Accesorios para máquinas portátiles
+                    inalámbricas</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
-            </div> 
+            </div>
             <div class="link-item">
-                <a href="accesorios_para_pistolas_de_aire.html">Accesorios para pistola de aire para pintar</a>
+                <a href="accesorios_para_pistolas_de_aire_para_pintar.html">Accesorios para pistola de aire para pintar</a>
                 <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
             </div>
     </section>
-    
 
-        <section id="letter-b">
-            <h2>Productos que comienzan con la letra B</h2>
-            <!-- Aquí va el contenido de los productos que comienzan con la letra B -->
-        </section>
 
-        <section id="letter-c">
-            <h2>Productos que comienzan con la letra C</h2>
-            <!-- Aquí va el contenido de los productos que comienzan con la letra C -->
-        </section>
+    <section id="letter-b">
+        <h2>B</h2>
 
-        <!-- Agrega más secciones para cada letra del alfabeto según sea necesario -->
+        <!-- Aquí va el contenido de los productos que comienzan con la letra B -->
+        <div class="main-links">
+            <div class="link-item">
+                <a href="balones_de_fútbol_soccer.html">Balones de fútbol soccer</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="banco_metálico.html">Banco metálico</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="bandas_de_lija.html">Bandas de lija</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="bandas_para_malacates.html">Banddas para malacates</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="bandorela_vial.html">Banderola vial</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+        </div>
 
-        <section id="all-brands">
-            <h2>Todas las marcas</h2>
-            <!-- Aquí va el contenido de todas las marcas -->
-        </section>
+        <div class="main-links">
+            <div class="link-item">
+                <a href="bandolas_de_posicionamiento.html">Bandolas de posicionamiento</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="barajas_española_poker.html">Barajas española y póker</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="barboquejos_casco.html">Barboquejos para casco</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="barras_cavadoras.html">Barras cavadoras</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+            <div class="link-item">
+                <a href="barras_corredizas_dados_accesorios.html">Barras corredizas y accesorios</a>
+                <img src="https://www.truper.com/CatVigente/img/TRUPER.svg" alt="Logo de la marca A" class="brand-logo">
+            </div>
+    </section>
 
-        <section id="brand-a">
-            <h2>TRUPER</h2>
-            <!-- Aquí va el contenido de los productos de la marca A -->
-        </section>
-        <!-- Agrega más secciones para cada marca según sea necesario -->
+
+    </section>
+
+    <section id="letter-c">
+        <h2>Productos que comienzan con la letra C</h2>
+        <!-- Aquí va el contenido de los productos que comienzan con la letra C -->
+    </section>
+
+    <!-- Agrega más secciones para cada letra del alfabeto según sea necesario -->
+
+    <section id="all-brands">
+        <h2>Todas las marcas</h2>
+        <!-- Aquí va el contenido de todas las marcas -->
+    </section>
+
+    <section id="brand-a">
+        <h2>TRUPER</h2>
+        <!-- Aquí va el contenido de los productos de la marca A -->
+    </section>
+    <!-- Agrega más secciones para cada marca según sea necesario -->
     </main>
 
     <footer>

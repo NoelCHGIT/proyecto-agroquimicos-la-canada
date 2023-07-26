@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Accesorios para inversoras de corte de plasma</title>
+        <title>Banco metálico</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -10,10 +10,19 @@
                 <div class="logo">
                    <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
                 </div>
+                
                 <div class="search-box">
-                    <input type="text" placeholder="Buscar productos..."><!-- Campo de búsqueda -->
-                    <button type="submit" class="search-button">Buscar</button><!-- Botón de búsqueda -->
+                    <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
+                    <datalist id="suggestions">
+                        <option value="Abrazaderas">
+                        <option value="Abrazaderas para Mangueras de Jardín">
+                        <option value="Accesorios para Auto">
+                        <option value="Accesorios para Neumático">
+                        <!-- Agrega más opciones de búsqueda sugeridas -->
+                    </datalist>
+                    <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
                 </div>
+    
                 <div class="contact-button">
                     <a href="#">Contáctanos</a>
                 </div>
@@ -52,15 +61,10 @@
     
 <body>
     <main>
-        <h1>Accesorios Para Inversoras de Corte de Plasma</h1>
+        <h1>Banco metálico</h1>
         <!-- Contenido específico de la página -->
         <section class="product-image-section">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83687-14118-AN-SOMU-250X-606.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83704-17947-AN-SOMI-130-606.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83709-14368-CAB-300X-606.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83694-14099-AN-COPLA-40-606.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83703-13212-ADA-SOLT-606.jpg" alt="Imagen de productos" id="productImage">
-
+            <img src="https://www.truper.com/CatVigente/img/modulos/84205-66009-BAL-F4-631.jpg" alt="Imagen de productos" id="productImage">
         </section>
     </main>
 

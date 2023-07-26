@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Abrazaderas para Aerógrafos</title>
+        <title>Abrazaderas para neumático</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -10,10 +10,19 @@
                 <div class="logo">
                    <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
                 </div>
+              
                 <div class="search-box">
-                    <input type="text" placeholder="Buscar productos..."><!-- Campo de búsqueda -->
-                    <button type="submit" class="search-button">Buscar</button><!-- Botón de búsqueda -->
+                    <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
+                    <datalist id="suggestions">
+                        <option value="Abrazaderas">
+                        <option value="Abrazaderas para Mangueras de Jardín">
+                        <option value="Accesorios para Auto">
+                        <option value="Accesorios para Neumático">
+                        <!-- Agrega más opciones de búsqueda sugeridas -->
+                    </datalist>
+                    <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
                 </div>
+    
                 <div class="contact-button">
                     <a href="#">Contáctanos</a>
                 </div>
@@ -52,13 +61,12 @@
     
 <body>
     <main>
-        <h1>Accesorios para Aerógrafos</h1>
-        <!-- Contenido específico de la página -->
+        <h1>Accesorios para neumático</h1>
+        <!-- Contenido específico de la página de abrazaderas -->
         <section class="product-image-section">
-            <img src="https://www.truper.com/CatVigente/img/modulos/79848-16020-AERO-35-293.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/79849-16022-MAN-AERO-35-293.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/79850-16021-RE-AERO-35-293.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/79854-100187-RE-AERO-8-293.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/79889-18075-CORAL-6-283.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/79892-19082-CORAL-HEM-14-283.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/79896-19024-NIPLE-283.jpg" alt="Imagen de productos" id="productImage">
         </section>
     </main>
 

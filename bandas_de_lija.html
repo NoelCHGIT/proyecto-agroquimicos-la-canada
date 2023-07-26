@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Abrazaderas para cascos</title>
+        <title>Bandas de lija</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -10,10 +10,19 @@
                 <div class="logo">
                    <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
                 </div>
+               
                 <div class="search-box">
-                    <input type="text" placeholder="Buscar productos..."><!-- Campo de búsqueda -->
-                    <button type="submit" class="search-button">Buscar</button><!-- Botón de búsqueda -->
+                    <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
+                    <datalist id="suggestions">
+                        <option value="Abrazaderas">
+                        <option value="Abrazaderas para Mangueras de Jardín">
+                        <option value="Accesorios para Auto">
+                        <option value="Accesorios para Neumático">
+                        <!-- Agrega más opciones de búsqueda sugeridas -->
+                    </datalist>
+                    <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
                 </div>
+    
                 <div class="contact-button">
                     <a href="#">Contáctanos</a>
                 </div>
@@ -52,12 +61,10 @@
     
 <body>
     <main>
-        <h1>Accesorios para Cascos</h1>
+        <h1>Bandas de lija</h1>
         <!-- Contenido específico de la página -->
         <section class="product-image-section">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83098-12337-BARBO-563.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83100-14318-AC-PF-563.jpg" alt="Imagen de productos" id="productImage">
-            <img src="https://www.truper.com/CatVigente/img/modulos/83104-12355-CUNU-N-563.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/84205-66009-BAL-F4-631.jpg" alt="Imagen de productos" id="productImage">
         </section>
     </main>
 

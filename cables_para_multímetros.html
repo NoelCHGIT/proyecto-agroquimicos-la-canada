@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Cables para multímetros</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="header-container"></div> <!-- Contenedor para el header -->
+        <div id="nav-container"></div> <!-- Contenedor para el nav -->
+        
+    <main>
+        <h1>Cables para multímetros</h1>
+        <!-- Contenido específico de la página -->
+        <section class="product-image-section">
+            <img src="https://www.truper.com/CatVigente/img/modulos/81671-10404-MUT-202-508.jpg" alt="Imagen de productos" id="productImage">
+            <img src="https://www.truper.com/CatVigente/img/modulos/90468-102406-MUT-CAB-508.jpg" alt="Imagen de productos" id="productImage">
+            
+            <p>Los precios de este catálogo pueden sufrir cambios / Los productos ilustrados pueden sufrir cambios sin previo aviso como resultado de nuestros procesos de mejora continua.</p>
+        </section>
+    </main>
+
+    <script>
+        // Carga del header desde header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headerContainer = document.getElementById('header-container');
+                headerContainer.innerHTML = data;
+            })
+            .catch(error => console.error(error));
+
+        // Carga del nav desde nav.html
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                const navContainer = document.getElementById('nav-container');
+                navContainer.innerHTML = data;
+            })
+            .catch(error => console.error(error));
+
+        // Carga del footer desde footer.html
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                const footerContainer = document.createElement('footer');
+                footerContainer.innerHTML = data;
+                document.body.appendChild(footerContainer);
+            })
+            .catch(error => console.error(error));
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

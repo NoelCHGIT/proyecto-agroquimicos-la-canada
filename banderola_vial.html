@@ -1,65 +1,11 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Banddolera vial</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <header>
-            <div class="header-bar">
-                <div class="logo">
-                   <a href="index.html"> <img src="imagenes/LOGO.jpg" alt="Logo de la empresa"></a>
-                </div>
-               
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Buscar productos..." list="suggestions">
-                    <datalist id="suggestions">
-                        <option value="Abrazaderas">
-                        <option value="Abrazaderas para Mangueras de Jardín">
-                        <option value="Accesorios para Auto">
-                        <option value="Accesorios para Neumático">
-                        <!-- Agrega más opciones de búsqueda sugeridas -->
-                    </datalist>
-                    <button type="button" class="search-button" onclick="buscarProducto()">Buscar</button>
-                </div>
-    
-                <div class="contact-button">
-                    <a href="#">Contáctanos</a>
-                </div>
-            </div>
-        </header>
-
-        <nav>
-            <div class="menu-toggle">
-                <div class="hamburger"></div>
-            </div>
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Quiénes somos</a>
-                    <ul class="submenu">
-                        <li><a href="conocenos.html">Conócenos</a></li>
-                        <li><a href="#">Categoría 2</a></li>
-                        <li><a href="#">Categoría 3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catálogo 2023</a>
-                    
-                </li>
-                <li>
-                    <a href="#">Servicio</a>
-                    <ul class="submenu">
-                        <li><a href="#">Información de Contacto</a></li>
-                        <li><a href="#">Formulario de Contacto</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    
-<body>
+        <div id="header-container"></div> <!-- Contenedor para el header -->
+        <div id="nav-container"></div> <!-- Contenedor para el nav -->
     <main>
         <h1>Bandolera vial</h1>
         <!-- Contenido específico de la página -->
@@ -72,17 +18,35 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-bar">
-            <div class="logo">
-                <img src="imagenes/LOGO.jpg" alt="Logo de la empresa">
-            </div>
-        </div>
-        <div class="footer-text">
-            <p>&copy; 2023 Agroquímicos La Cañada S.A. de C.V. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <script>
+        // Carga del header desde header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headerContainer = document.getElementById('header-container');
+                headerContainer.innerHTML = data;
+            })
+            .catch(error => console.error(error));
 
+        // Carga del nav desde nav.html
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                const navContainer = document.getElementById('nav-container');
+                navContainer.innerHTML = data;
+            })
+            .catch(error => console.error(error));
+
+        // Carga del footer desde footer.html
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                const footerContainer = document.createElement('footer');
+                footerContainer.innerHTML = data;
+                document.body.appendChild(footerContainer);
+            })
+            .catch(error => console.error(error));
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

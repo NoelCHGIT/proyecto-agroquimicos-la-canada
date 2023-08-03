@@ -8,8 +8,10 @@
     <div id="nav-container"></div>    <!-- Contenedor para el nav -->
 
     <main>
+        <!-- Sección del Slider -->
         <section id="slider">
             <div class="slider-container">
+                <!-- Slides del Slider -->
                 <div class="slide">
                     <img src="imagenes/LOGOGRANDE.png" alt="LOGO">
                 </div>
@@ -34,23 +36,10 @@
                 <div class="arrow arrow-right">&#8250;</div>
             </div>
         </section>
-
-        <section>
-            <h2>Productos Destacados</h2>
-            <!-- Aquí puedes agregar el contenido de los productos destacados -->
-        </section>
-
-        <section>
-            <h2>Todos los Productos</h2>
-            <!-- Aquí puedes agregar el contenido de todos los productos -->
-        </section>
     </main>
 
-    
- 
-
+    <!-- Carga del header desde header.html -->
     <script>
-        // Carga del header desde header.html
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
@@ -58,8 +47,10 @@
                 headerContainer.innerHTML = data;
             })
             .catch(error => console.error(error));
+    </script>
 
-        // Carga del nav desde nav.html
+    <!-- Carga del nav desde nav.html -->
+    <script>
         fetch('nav.html')
             .then(response => response.text())
             .then(data => {
@@ -67,9 +58,11 @@
                 navContainer.innerHTML = data;
             })
             .catch(error => console.error(error));
+    </script>
 
-        // Carga del footer desde footer.html
-            fetch('footer.html')
+    <!-- Carga del footer desde footer.html -->
+    <script>
+        fetch('footer.html')
             .then(response => response.text())
             .then(data => {
                 const footerContainer = document.createElement('footer');
@@ -77,8 +70,10 @@
                 document.body.appendChild(footerContainer);
             })
             .catch(error => console.error(error));
+    </script>
 
-        // Slider
+    <!-- Slider -->
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             const sliderContainer = document.querySelector(".slider-container");
             const slides = document.querySelectorAll(".slide");
@@ -119,12 +114,9 @@
             }
 
             setInterval(autoSlide, 8000); // Cambiar de imagen cada 8 segundos
-
         });
     </script>
 
-        <script src="script.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>

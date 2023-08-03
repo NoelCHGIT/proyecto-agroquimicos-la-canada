@@ -1013,3 +1013,69 @@ footer {
 .search-suggestion:hover {
     background-color: #f1f1f1;
 }
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección del formulario de contacto */
+.contact-form {
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  
+
+  
+/* Estilos para la sección del mapa de ubicación */
+  
+  /* Estilos para la sección de información de contacto */
+  .contact-info-section {
+
+    border: 1px solid #ccc;
+  }
+  
+  

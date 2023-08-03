@@ -1,1 +1,79 @@
-<h1>pendiente</h1>
+<html>
+<head>
+    <title>Contáctanos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+</head>
+<bodycontac>
+    <div id="header-container"></div> <!-- Contenedor para el header -->
+    <div id="nav-container"></div>    <!-- Contenedor para el nav -->
+
+    
+    <main>
+        <br>
+        <section class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="map-section">
+            <h2>Ubicación</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.9921055721998!2d-96.95738702402615!3d19.151822849586374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4db5b39204b95%3A0xdeac7dc222cebdf6!2zQWdyb3F1w61taWNvcyAiTGEgQ2HDsWFkYSI!5e0!3m2!1ses!2smx!4v1690950252406!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="contact-info-section">
+            <h2>Información de Contacto</h2>
+            <p>Teléfono: (273)7341333</p>
+            <p>Dirección: Km 44 Fortin Conejos SN, Huatusco de Chicuellar, Carretera a Manuel Gonzalez, Huatusco, Veracruz de Ignacio de la Llave</p>
+        </section>
+    </main>
+    
+ 
+
+    <script>
+        // Carga del header desde header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headerContainer = document.getElementById('header-container');
+                headerContainer.innerHTML = data;
+            })
+            .catch(error => console.error(error));
+
+
+        // Carga del footer desde footer.html
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                const footerContainer = document.createElement('footer');
+                footerContainer.innerHTML = data;
+                document.body.appendChild(footerContainer);
+            })
+            .catch(error => console.error(error));
+
+    </script>
+
+        <script src="script.js"></script>
+
+
+</bodycontac>
+</html>
